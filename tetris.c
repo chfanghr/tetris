@@ -34,7 +34,7 @@ static int havemodes = 0;
 #define KEY_PAUSE  4
 #define KEY_QUIT   5
 
-#define HIGH_SCORE_FILE "/var/games/tetris.scores"
+#define HIGH_SCORE_FILE "~/.tetris.scores"
 #define TEMP_SCORE_FILE "/tmp/tetris-tmp.scores"
 
 char *keys = DEFAULT_KEYS;
