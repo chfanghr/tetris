@@ -25,3 +25,6 @@ fanghr@admin:/mnt/d/tetris$ ./tetris
 cat: /home/fanghr/.tetris.scores: 没有那个文件或目录
 ```
 该文件是储存分数用的，在家目录下建立一个`.tetris.scores`文件即可
+```bash
+fanghr@admin:~$ echo >>~/.tetris.scores
+```
