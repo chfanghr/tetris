@@ -38,14 +38,14 @@
 /* Esc[2K                     - Erases the entire current line. */
 #define delline()             puts ("\e[2K")
 /* Esc[Line;ColumnH           - Moves the cursor to the specified position (coordinates) */
-#define gotoxy(x,y)           printf("\e[%d;%dH", y, x)
+#define gotoxy(x, y)           printf("\e[%d;%dH", y, x)
 /* Esc[?25l (lower case L)    - Hide Cursor */
 #define hidecursor()          puts ("\e[?25l")
 /* Esc[?25h (lower case H)    - Show Cursor */
 #define showcursor()          puts ("\e[?25h")
 
 /* Esc[Value;...;Valuem       - Set Graphics Mode */
-#define __set_gm(attr,color,val)                                        \
+#define __set_gm(attr, color, val)                                        \
         if (!color)                                                     \
                 printf("\e[%dm", attr);                                 \
         else                                                            \
